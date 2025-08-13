@@ -44,7 +44,7 @@ export default function App() {
         <div className="text-center space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-2">
-              Coolie Movie
+              Coolie
             </h1>
             <p className="text-xl md:text-2xl text-purple-200">
               Starts August 15, 2025 at 7:10 PM
