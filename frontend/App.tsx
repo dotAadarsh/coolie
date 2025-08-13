@@ -35,26 +35,15 @@ export default function App() {
   }, []);
 
   return (
-    <div 
-      className="min-h-screen relative overflow-hidden"
-      style={{
-        background: `linear-gradient(135deg, #000000 0%, #0A0A0A 25%, #0C0C0C 50%, #080808 75%, #0B0B0B 100%)`
-      }}
-    >
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-black via-gray-950 to-gray-900">
       {/* Subtle overlay for depth */}
-      <div 
-        className="absolute inset-0"
-        style={{ backgroundColor: 'rgba(14, 14, 14, 0.3)' }}
-      ></div>
+      <div className="absolute inset-0 bg-gray-950/30"></div>
       
       {/* Content */}
       <div className="relative z-10 min-h-screen flex items-center justify-center p-4">
         <div className="text-center space-y-8">
           <div className="space-y-4">
-            <h1 
-              className="text-4xl md:text-6xl font-bold mb-2 drop-shadow-lg"
-              style={{ color: '#FFD700' }}
-            >
+            <h1 className="text-4xl md:text-6xl font-bold mb-2 drop-shadow-lg text-yellow-400">
               Coolie
             </h1>
             <p className="text-xl md:text-2xl text-gray-300">
@@ -63,17 +52,8 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-            <div 
-              className="backdrop-blur-sm rounded-lg p-4 md:p-6 border"
-              style={{
-                backgroundColor: 'rgba(12, 12, 12, 0.8)',
-                borderColor: 'rgba(255, 215, 0, 0.3)'
-              }}
-            >
-              <div 
-                className="text-3xl md:text-5xl font-bold mb-2"
-                style={{ color: '#FFD700' }}
-              >
+            <div className="backdrop-blur-sm rounded-lg p-4 md:p-6 border border-yellow-400/30 bg-gray-950/80">
+              <div className="text-3xl md:text-5xl font-bold mb-2 text-yellow-400">
                 {timeLeft.days.toString().padStart(2, '0')}
               </div>
               <div className="text-sm md:text-base text-gray-400 uppercase tracking-wide">
@@ -81,17 +61,8 @@ export default function App() {
               </div>
             </div>
 
-            <div 
-              className="backdrop-blur-sm rounded-lg p-4 md:p-6 border"
-              style={{
-                backgroundColor: 'rgba(10, 10, 10, 0.8)',
-                borderColor: 'rgba(255, 215, 0, 0.3)'
-              }}
-            >
-              <div 
-                className="text-3xl md:text-5xl font-bold mb-2"
-                style={{ color: '#FFD700' }}
-              >
+            <div className="backdrop-blur-sm rounded-lg p-4 md:p-6 border border-yellow-400/30 bg-gray-950/80">
+              <div className="text-3xl md:text-5xl font-bold mb-2 text-yellow-400">
                 {timeLeft.hours.toString().padStart(2, '0')}
               </div>
               <div className="text-sm md:text-base text-gray-400 uppercase tracking-wide">
@@ -99,17 +70,8 @@ export default function App() {
               </div>
             </div>
 
-            <div 
-              className="backdrop-blur-sm rounded-lg p-4 md:p-6 border"
-              style={{
-                backgroundColor: 'rgba(8, 8, 8, 0.8)',
-                borderColor: 'rgba(255, 215, 0, 0.3)'
-              }}
-            >
-              <div 
-                className="text-3xl md:text-5xl font-bold mb-2"
-                style={{ color: '#FFD700' }}
-              >
+            <div className="backdrop-blur-sm rounded-lg p-4 md:p-6 border border-yellow-400/30 bg-gray-950/80">
+              <div className="text-3xl md:text-5xl font-bold mb-2 text-yellow-400">
                 {timeLeft.minutes.toString().padStart(2, '0')}
               </div>
               <div className="text-sm md:text-base text-gray-400 uppercase tracking-wide">
@@ -117,17 +79,8 @@ export default function App() {
               </div>
             </div>
 
-            <div 
-              className="backdrop-blur-sm rounded-lg p-4 md:p-6 border"
-              style={{
-                backgroundColor: 'rgba(11, 11, 11, 0.8)',
-                borderColor: 'rgba(255, 215, 0, 0.3)'
-              }}
-            >
-              <div 
-                className="text-3xl md:text-5xl font-bold mb-2"
-                style={{ color: '#FFD700' }}
-              >
+            <div className="backdrop-blur-sm rounded-lg p-4 md:p-6 border border-yellow-400/30 bg-gray-950/80">
+              <div className="text-3xl md:text-5xl font-bold mb-2 text-yellow-400">
                 {timeLeft.seconds.toString().padStart(2, '0')}
               </div>
               <div className="text-sm md:text-base text-gray-400 uppercase tracking-wide">
@@ -136,10 +89,7 @@ export default function App() {
             </div>
           </div>
 
-          <div 
-            className="text-lg md:text-xl font-medium"
-            style={{ color: '#FFD700' }}
-          >
+          <div className="text-lg md:text-xl font-medium text-yellow-400">
             Time remaining until showtime
           </div>
         </div>
